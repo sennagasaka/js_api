@@ -1,0 +1,101 @@
+body{
+    margin: 0px;
+}
+header{
+    text-align: center;
+    background-color: rgb(162, 215, 221);
+    width: 100%;
+}
+header h1{
+    font-size: 48px;
+    width: 100%;
+    margin: 0px;
+}
+.img{
+    background-color: #ccc;
+    height: 200px;
+    text-align: center;
+}
+.img img{
+    height: 100%;
+    cursor: pointer;
+}
+.img input{
+    display: none;
+}
+.tab-title{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 28px;
+    padding: 0px;
+    list-style: none;
+    height: 11.25px;
+}
+.tab-title-content{
+    width:45%;
+    height: 100%;
+    border-radius: 19px;
+    font-size: 24px;
+}
+.tab-title p{
+    margin: 0px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(204, 204, 204);
+    border-radius: 4px;
+    display: flex;             
+    justify-content: center;   
+    align-items: center;       
+}
+.tab-title p:hover{
+    cursor: pointer;  
+}
+.result-tab-1-table{
+    width: 90%;
+    margin: auto;
+    border: 5px #000 solid;
+    font-size: 36px;
+}
+.result-tab-1-title{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 72px;
+    font-weight: bold;
+    border-bottom: 5px #000 solid;
+    background-color: #ccc;
+}
+.result-tab-1-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 72px;
+}
+.result-tab-2-container{
+    width: 90%;
+    margin: auto;    
+}
+.result-tab-2-content-title{
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.result-tab-2-content-title p{
+    margin: 24px 24px 12px 36px;
+}
+.result-tab-2-content-meter{
+    display: flex;
+    justify-content: space-between;
+}
+.result-tab-2-content-meter-element{
+    width: 18%;
+    background-color: #ccc;
+    height: 48px;
+    border-radius: 12px;
+}
+
+.yellow{
+    background-color: rgb(255, 255, 136) !important;
+}
+.show{
+    display: block !important;
+}

@@ -1,0 +1,121 @@
+<!-- ========================================================== -->
+<!-- このブランチでは事前に最低限必要なファイル                    -->
+<!-- 〇intern.html                                              -->
+<!-- 〇intern.css                                               -->
+<!-- 〇inertn.js                                                -->
+<!-- 〇gitignore.js                                             -->
+<!-- を作成しています。                                          -->
+<!-- これ以上のファイルの追加などは自由に行っていただいてOKですが、 -->
+<!-- 基本はこの3つのファイルを利用して作成してください。           -->
+<!-- ========================================================== -->
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Image Analysis</title>
+        <link rel="stylesheet" href="../css/intern.css">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <header>
+            <h1>Image Analysis</h1>
+        </header>
+        <div class=content>
+            <div class="img">
+                <label>
+                    <img src="https://frontend3api.s3.ap-northeast-3.amazonaws.com/image/1200px-Picture_icon_BLACK.svg.png">
+                    <input type="file" >
+                </label>
+            </div>
+            <ul class="tab-title">
+                <li class="tab-title-content"><p id="objects">Objects</p></li>
+                <li class="tab-title-content"><p id="safe-search">Safe Search</p></li>
+            </ul>
+            </div>
+            <div id="result-tab-1" style="display: none;">
+                <div class="result-tab-1-table">
+                    <div class="result-tab-1-title">
+                        <p>Name</p>
+                        <p>Score</p>
+                    </div>
+                    <div class="result-tab-1-content">
+                        <p id="name"></p>
+                        <p id="score"></p>
+                    </div>
+                </div>
+            </div>
+            <div id="result-tab-2" style="display: none;">
+                <div class="result-tab-2-container">
+                    <div class="result-tab-2_content adult">
+                        <div class="result-tab-2-content-title">
+                            <p>adult</p>
+                            <p id="adult"></p>
+                        </div>
+                        <div class="result-tab-2-content-meter" id="meter-0">
+                            <div class="result-tab-2-content-meter-element"></div>
+                            <div class="result-tab-2-content-meter-element"></div>
+                            <div class="result-tab-2-content-meter-element"></div>
+                            <div class="result-tab-2-content-meter-element"></div>
+                            <div class="result-tab-2-content-meter-element"></div>
+                        </div>
+                    </div>
+                    <div class="result-tab-2_content spoof">
+                        <div class="result-tab-2-content-title">
+                            <p>spoof</p>
+                            <p id="spoof"></p>
+                        </div>
+                        <div class="result-tab-2-content-meter" id="meter-1">
+                            <div class="result-tab-2-content-meter-element"></div>
+                            <div class="result-tab-2-content-meter-element"></div>
+                            <div class="result-tab-2-content-meter-element"></div>
+                            <div class="result-tab-2-content-meter-element"></div>
+                            <div class="result-tab-2-content-meter-element"></div>
+                        </div>
+                    </div>
+                    <div class="result-tab-2_content medical">
+                        <div class="result-tab-2-content-title">
+                            <p>medical</p>
+                            <p id="medical"></p>
+                        </div>
+                        <div class="result-tab-2-content-meter" id="meter-2">
+                            <div class="result-tab-2-content-meter-element"></div>
+                            <div class="result-tab-2-content-meter-element"></div>
+                            <div class="result-tab-2-content-meter-element"></div>
+                            <div class="result-tab-2-content-meter-element"></div>
+                            <div class="result-tab-2-content-meter-element"></div>
+                        </div>
+                    </div>
+                    <div class="result-tab-2_content violence">
+                        <div class="result-tab-2-content-title">
+                            <p>violence</p>
+                            <p id="violence"></p>
+                        </div>
+                        <div class="result-tab-2-content-meter" id="meter-3">
+                            <div class="result-tab-2-content-meter-element"></div>
+                            <div class="result-tab-2-content-meter-element"></div>
+                            <div class="result-tab-2-content-meter-element"></div>
+                            <div class="result-tab-2-content-meter-element"></div>
+                            <div class="result-tab-2-content-meter-element"></div>
+                        </div>
+                    </div>
+                    <div class="result-tab-2-content racy">
+                        <div class="result-tab-2-content-title">
+                            <p>racy</p>
+                            <p id="racy"></p>
+                        </div>
+                        <div class="result-tab-2-content-meter" id="meter-4">
+                            <div class="result-tab-2-content-meter-element"></div>
+                            <div class="result-tab-2-content-meter-element"></div>
+                            <div class="result-tab-2-content-meter-element"></div>
+                            <div class="result-tab-2-content-meter-element"></div>
+                            <div class="result-tab-2-content-meter-element"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer></footer>
+        <script src="../js/gitignore.js"></script>
+        <script src="../js/intern.js"></script>
+    </body>
+</html>
